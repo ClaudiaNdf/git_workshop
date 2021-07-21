@@ -127,7 +127,7 @@ Pull request | Lass andere wissen, dass du Änderungen vorgenommen hast.
 
 5. Stage/Commit/Push - ladet eure Änderungen in unser gemeinsames Repositorium hoch
 
-6. Change II - Fügt einen Satz in das Dokument `2_3_gemeinsames_dokument.txt`ein.
+6. Change II - Fügt einen Satz in das Dokument `2_6_gemeinsames_dokument.txt`ein.
 
 7. Stage/Commit/Push - ladet eure Änderungen in unser gemeinsames Repositorium hoch
 
