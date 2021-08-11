@@ -32,12 +32,13 @@ econRedD<-"#90353B"
 \begin{document}
 
 
-\title{Programming with R/Advanced R}
-\institute{FDZ Spring Academy}
+\title{Version Controlling \\
+mit Git + Github + RStudio}
+\institute{Interner IQB Workshop}
 
 
-\author[Dries Debeer \& Benjamin Becker]{Dries Debeer \& Benjamin Becker}
-\date{18. and 19. March 2021}
+\author[Claudia Neuendorf \& Benjamin Becker]{Claudia Neuendorf \& Benjamin Becker}
+\date{18. August 2021}
 
 
 \begin{frame}
@@ -46,33 +47,17 @@ econRedD<-"#90353B"
 \addtocounter{framenumber}{-1}
 
 \begin{frame}{Agenda}
-\textbf{Day 1}
-\begin{itemize}
-  \item Recap \& Clean Code
-  \item Functions (Introduction)
-  \item Functions (Advanced)
-\end{itemize}
-\textbf{Day 2}
-\begin{itemize}
-  \item Flow \& Iteration
-  \item Object oriented programming: S3
-  \item Version Controlling
-\end{itemize}
-\end{frame}
-
-\section{Version Controlling (Git + Github)}
-
-\begin{frame}{Version Controlling}
 \begin{itemize}
   \item Motivation
   \item Setup
-  \item Work flow
-  \item Recommendations
-  \item Resources
+  \item Work Flows
+  \item Empfehlungen
+  \item Ressourcen
 \end{itemize}
 \end{frame}
 
-\subsection{Motivation}
+% --------------------------------------------------------------------------------
+\section{Motivation}
 
 \begin{frame}{Motivation}
 \begin{center}
@@ -80,38 +65,47 @@ econRedD<-"#90353B"
 \end{center}
 \end{frame}
 
-\begin{frame}{Motivation}
+\begin{frame}{Motivation 1}
+\textbf{Solo-Projekte}
 \begin{itemize}
-  \item Implementation of long term change history
-  \begin{itemize}
-  \item No ridiculous file names
-  \item No archive subfolder
-  \item Always perfect overview of file history and changes
-  \end{itemize}
-  \item Collaborations
-  \begin{itemize}
-  \item What has changed?
-  \item Who has changed it?
-  \item Documentation of changes
-  \item Parallel working possible (merging)
-  \end{itemize}
+  \item Implementation einer 'Change History'
+  \item Keine verr{\"u}ckten Dateinamen
+  \item Kein Archiv-Ordner
+  \item Was wurde ge{\"a}ndert?
+  \item Wann wurde es ge{\"a}ndert?
+  \item Zug{\"a}nglichkeit f{\"u}r andere ('Open Science')
+  \item ...
 \end{itemize}
 \end{frame}
 
-\begin{frame}{But...}
+\begin{frame}{Motivation 2}
+\textbf{Kollaborationen}
+\begin{itemize}
+  \item Wer hat was ge{\"a}ndert?
+  \item Exakte, automatische Dokumentation aller {\"A}nderungen
+  \item Erlaubt einfaches, paralleles Arbeiten
+  \item Implementiert hierarchische Projekt-Strukturen (Absegnen von {\"A}nderungen)
+  \item ...
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aber...}
 \begin{center}
 \includegraphics[height=.75\textheight]{Slides/git_no_idea.png}
 \end{center}
 \end{frame}
 
-\subsection{Setup}
+% --------------------------------------------------------------------------------
+\section{Setup}
 
-\begin{frame}{Requirements}
+\begin{frame}{Voraussetzungen}
 \begin{itemize}
-  \item Install git
-  \item (optional) Install/Setup GUI for git (RStudio, Gitkraken, ...)
-  \item Setup account for Github/Bitbucket/Gitlab/...
-  \item Connect everything
+  \item Git-Installation
+  \item RStudio-Installation (optional) \\
+  $\rightarrow$ Alternativen: Gitkraken, SmartGit, ...
+  \item Account anlegen fuer Github \\
+  $\rightarrow$ Alternativen: Bitbucket, Gitlab, ...
+  \item Alles verbinden
 \end{itemize}
 \end{frame}
 
@@ -127,10 +121,11 @@ econRedD<-"#90353B"
 \end{center}
 \end{frame}
 
-\subsection{Work flow}
+% --------------------------------------------------------------------------------
+\section{Work Flows}
 
-\begin{frame}{Work flow}
-\textbf{Creating a repository}
+\begin{frame}{Work Flow 1}
+\textbf{Erstellen eines Repositories}
 \begin{itemize}
   \item Create an online repository (e.g. on Github)
   \begin{itemize}
@@ -153,7 +148,8 @@ econRedD<-"#90353B"
 \end{itemize}
 \end{frame}
 
-\subsection{Recommendations}
+% --------------------------------------------------------------------------------
+\section{Empfehlungen}
 
 \begin{frame}{Recommendations}
 \begin{itemize}
@@ -166,7 +162,8 @@ econRedD<-"#90353B"
 \end{itemize}
 \end{frame}
 
-\subsection{Resources}
+% --------------------------------------------------------------------------------
+\subsection{Ressourcen}
 
 \begin{frame}{Resources}
 Git (+ R) Resources
@@ -183,9 +180,9 @@ Git (+ R) Resources
 \begin{frame}[plain]
 
 \begin{center}
-\Large Thank you for your attention!
+\Large Vielen Dank fuer Eure Aufmerksamkeit!
 
-\visible<2>{Questions? Remarks?}
+\visible<2>{Fragen? Anmerkungen?}
 \end{center}
 
 \end{frame}
