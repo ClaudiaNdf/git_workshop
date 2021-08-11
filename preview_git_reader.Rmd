@@ -1,8 +1,10 @@
 ---
-title: "Workshopreader: Verwendung von git mit RStudio für die Forschung am IQB"
+title: 'Workshopreader: Verwendung von git mit RStudio für die Forschung am IQB'
 author: "Benjamin Becker & Claudia Neuendorf"
-date: 18.08.2021
-output: html_notebook
+date: "18.08.2021"
+output:
+  html_document:
+    df_print: paged
 ---
 
 

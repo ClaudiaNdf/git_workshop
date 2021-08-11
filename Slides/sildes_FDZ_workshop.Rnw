@@ -1,0 +1,193 @@
+\documentclass{beamer}
+
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usetheme{metropolis}
+
+
+<<r setup, echo=FALSE, message=FALSE, results='hide'>>=
+suppressPackageStartupMessages({
+  library(knitr)
+})
+
+knit_theme$set("acid")
+opts_chunk$set(message=FALSE, warning=FALSE)
+opts_chunk$set(results="hide")
+opts_chunk$set(strip.white = TRUE)
+opts_chunk$set(size = "small")
+opts_chunk$set(comment = "#")
+
+
+# Farben
+mLightBrown<-"#EB811B"
+econBlue<-"#008BBC"
+econRed<-"#C10534"
+econBlueD<-"#3E647D"
+econRedD<-"#90353B"
+@
+
+
+\begin{document}
+
+
+\title{Programming with R/Advanced R}
+\institute{FDZ Spring Academy}
+
+
+\author[Dries Debeer \& Benjamin Becker]{Dries Debeer \& Benjamin Becker}
+\date{18. and 19. March 2021}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+\addtocounter{framenumber}{-1}
+
+\begin{frame}{Agenda}
+\textbf{Day 1}
+\begin{itemize}
+  \item Recap \& Clean Code
+  \item Functions (Introduction)
+  \item Functions (Advanced)
+\end{itemize}
+\textbf{Day 2}
+\begin{itemize}
+  \item Flow \& Iteration
+  \item Object oriented programming: S3
+  \item Version Controlling
+\end{itemize}
+\end{frame}
+
+\section{Version Controlling (Git + Github)}
+
+\begin{frame}{Version Controlling}
+\begin{itemize}
+  \item Motivation
+  \item Setup
+  \item Work flow
+  \item Recommendations
+  \item Resources
+\end{itemize}
+\end{frame}
+
+\subsection{Motivation}
+
+\begin{frame}{Motivation}
+\begin{center}
+\includegraphics[height=.75\textheight]{Slides/why_version_control.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}{Motivation}
+\begin{itemize}
+  \item Implementation of long term change history
+  \begin{itemize}
+  \item No ridiculous file names
+  \item No archive subfolder
+  \item Always perfect overview of file history and changes
+  \end{itemize}
+  \item Collaborations
+  \begin{itemize}
+  \item What has changed?
+  \item Who has changed it?
+  \item Documentation of changes
+  \item Parallel working possible (merging)
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{But...}
+\begin{center}
+\includegraphics[height=.75\textheight]{Slides/git_no_idea.png}
+\end{center}
+\end{frame}
+
+\subsection{Setup}
+
+\begin{frame}{Requirements}
+\begin{itemize}
+  \item Install git
+  \item (optional) Install/Setup GUI for git (RStudio, Gitkraken, ...)
+  \item Setup account for Github/Bitbucket/Gitlab/...
+  \item Connect everything
+\end{itemize}
+\end{frame}
+
+\begin{frame}{RStudio}
+\begin{center}
+\includegraphics[height=.75\textheight]{Slides/rstudio_git.JPG}
+\end{center}
+\end{frame}
+
+\begin{frame}{RStudio}
+\begin{center}
+\includegraphics[width=.8\textwidth]{Slides/rstudio_git2.JPG}
+\end{center}
+\end{frame}
+
+\subsection{Work flow}
+
+\begin{frame}{Work flow}
+\textbf{Creating a repository}
+\begin{itemize}
+  \item Create an online repository (e.g. on Github)
+  \begin{itemize}
+    \item Use an R specific .gitignore
+    \item Initialize with a short readme
+  \end{itemize}
+  \item Clone the repository to your local machine
+  \item (optional) Place an R project in the existing repository
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Work flow}
+\textbf{Working with a repository}
+\begin{itemize}
+  \item Before working: Synch your local repo (\textbf{Pull})
+  \item Perform changes in your local repository
+  \item \textbf{Stage} your changes
+  \item \textbf{Commit} your changes (aka new version)
+  \item \textbf{Push} your changes
+\end{itemize}
+\end{frame}
+
+\subsection{Recommendations}
+
+\begin{frame}{Recommendations}
+\begin{itemize}
+  \item Keep it simple!
+  \begin{itemize}
+    \item No branches/forks/pull requests
+  \end{itemize}
+  \item Have meaningful commits
+  \item Keep it lean (no big files)
+\end{itemize}
+\end{frame}
+
+\subsection{Resources}
+
+\begin{frame}{Resources}
+Git (+ R) Resources
+\begin{itemize}
+\item Small Intro (\url{https://r-bio.github.io/intro-git-rstudio/})
+\item Happy Git with R (\url{https://happygitwithr.com/})
+\item R Packages and Git (\url{https://r-pkgs.org/git.html})
+\item Git Book (\url{http://git-scm.com/book/en/v2})
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[plain]
+
+\begin{center}
+\Large Thank you for your attention!
+
+\visible<2>{Questions? Remarks?}
+\end{center}
+
+\end{frame}
+
+\end{document}
