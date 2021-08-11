@@ -46,12 +46,18 @@ mit Git + Github + RStudio}
 \end{frame}
 \addtocounter{framenumber}{-1}
 
+\begin{frame}[plain]
+\begin{center}
+\huge Disclaimer
+\end{center}
+\end{frame}
+
 \begin{frame}{Agenda}
 \begin{itemize}
   \item Motivation
   \item Setup
   \item Work Flows
-  \item Empfehlungen
+  \item Allgemeine Empfehlungen
   \item Ressourcen
 \end{itemize}
 \end{frame}
@@ -69,11 +75,14 @@ mit Git + Github + RStudio}
 \textbf{Solo-Projekte}
 \begin{itemize}
   \item Implementation einer 'Change History'
+  \begin{itemize}
+    \item Was wurde ge{\"a}ndert?
+    \item Wann wurde es ge{\"a}ndert?
+  \end{itemize}
   \item Keine verr{\"u}ckten Dateinamen
   \item Kein Archiv-Ordner
-  \item Was wurde ge{\"a}ndert?
-  \item Wann wurde es ge{\"a}ndert?
   \item Zug{\"a}nglichkeit f{\"u}r andere ('Open Science')
+  \item Sicherung/Archivierung
   \item ...
 \end{itemize}
 \end{frame}
@@ -81,8 +90,9 @@ mit Git + Github + RStudio}
 \begin{frame}{Motivation 2}
 \textbf{Kollaborationen}
 \begin{itemize}
-  \item Wer hat was ge{\"a}ndert?
-  \item Exakte, automatische Dokumentation aller {\"A}nderungen
+  \item Wer hat wann was ge{\"a}ndert?
+  \item Eindeutiger, aktueller Projektstand
+  \item Keine nervigen Mail-Anh{\"a}nge oder Austausch-Plattformen
   \item Erlaubt einfaches, paralleles Arbeiten
   \item Implementiert hierarchische Projekt-Strukturen (Absegnen von {\"A}nderungen)
   \item ...
@@ -103,7 +113,7 @@ mit Git + Github + RStudio}
   \item Git-Installation
   \item RStudio-Installation (optional) \\
   $\rightarrow$ Alternativen: Gitkraken, SmartGit, ...
-  \item Account anlegen fuer Github \\
+  \item Account anlegen f{\"u}r Github \\
   $\rightarrow$ Alternativen: Bitbucket, Gitlab, ...
   \item Alles verbinden
 \end{itemize}
@@ -127,38 +137,59 @@ mit Git + Github + RStudio}
 \begin{frame}{Work Flow 1}
 \textbf{Erstellen eines Repositories}
 \begin{itemize}
-  \item Create an online repository (e.g. on Github)
+  \item Erstellen eines Online-Repositorys (z.B. auf Github)
   \begin{itemize}
-    \item Use an R specific .gitignore
-    \item Initialize with a short readme
+    \item Benutzen einer R-spezifischen .gitignore
+    \item Initialisieren mit einer kurzen Readme-Datei (.md)
   \end{itemize}
-  \item Clone the repository to your local machine
-  \item (optional) Place an R project in the existing repository
+  \item Repository lokal auf den PC clonen
+  \item (optional) R-Projekt in bestehendes Repository einf{\"u}gen
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Work flow}
-\textbf{Working with a repository}
+\begin{frame}{Exkurs: gitignore}
 \begin{itemize}
-  \item Before working: Synch your local repo (\textbf{Pull})
-  \item Perform changes in your local repository
-  \item \textbf{Stage} your changes
-  \item \textbf{Commit} your changes (aka new version)
-  \item \textbf{Push} your changes
+  \item Einfache Text-Datei
+  \item Welche Dateien sollen nicht archiviert werden? \\
+  $\rightarrow$ Diese dann nur lokal in ihrer aktuellen Version vorhanden!
+  \item Optionen
+  \begin{itemize}
+    \item Einzelne Dateien
+    \item Ordner
+    \item Bestimmte Datei-Typen
+    \item Kombinationen daraus
+  \end{itemize}
+  \item Anwendungs-Beispiele
+    \begin{itemize}
+    \item Gro{\ss}e Dateien (Datens{\"a}tze, Bilder, ...)
+    \item Hilfsdateien (z.B. bei LaTeX-Kompilierungen)
+  \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Work Flow 2}
+\textbf{Arbeit an einem bestehenden Repositorium}
+\begin{itemize}
+  \item Davor: Lokales Repo synchronisieren (\textbf{pullen})
+  \item {\"A}nderungen im lokalen Repository \\
+  $\rightarrow$ Dateien erstellen/{\"u}berschreiben/l{\"o}schen
+  \item {\"A}nderungen \textbf{stagen}
+  \item Gestagede {\"A}nderungen \textbf{commiten} (aka neue Version)
+  \item Einen oder mehrere Commits \textbf{pushen} (Online-Repository updaten)
 \end{itemize}
 \end{frame}
 
 % --------------------------------------------------------------------------------
-\section{Empfehlungen}
+\section{Allgemeine Empfehlungen}
 
-\begin{frame}{Recommendations}
+\begin{frame}{Allgemeine Empfehlungen}
 \begin{itemize}
-  \item Keep it simple!
+  \item So simpel wie m{\"o}glich halten!
   \begin{itemize}
-    \item No branches/forks/pull requests
+    \item Wenn m{\"o}glich keine Branches/Forks/Pull Requests
   \end{itemize}
-  \item Have meaningful commits
-  \item Keep it lean (no big files)
+  \item Inhaltlich bedeutungsvolle Commits
+  \item Repository schlank halten (keine gro{\ss}en Dateien)
 \end{itemize}
 \end{frame}
 
@@ -166,11 +197,15 @@ mit Git + Github + RStudio}
 \subsection{Ressourcen}
 
 \begin{frame}{Resources}
-Git (+ R) Resources
+\textbf{Git + RStudio Resourcen}
 \begin{itemize}
 \item Small Intro (\url{https://r-bio.github.io/intro-git-rstudio/})
 \item Happy Git with R (\url{https://happygitwithr.com/})
 \item R Packages and Git (\url{https://r-pkgs.org/git.html})
+\end{itemize}
+
+\textbf{Allgemeine Git Resourcen}
+\begin{itemize}
 \item Git Book (\url{http://git-scm.com/book/en/v2})
 \end{itemize}
 
