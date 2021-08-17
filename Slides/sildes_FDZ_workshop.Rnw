@@ -111,8 +111,8 @@ mit Git + Github + RStudio}
 \begin{frame}{Voraussetzungen}
 \begin{itemize}
   \item Git-Installation
-  \item RStudio-Installation (optional) \\
-  $\rightarrow$ Alternativen: Gitkraken, SmartGit, ...
+  \item RStudio-Installation \\
+  $\rightarrow$ Alternativen: Shell, Gitkraken, SmartGit, ...
   \item Account anlegen f{\"u}r Github \\
   $\rightarrow$ Alternativen: Bitbucket, Gitlab, ...
   \item Alles verbinden
@@ -137,20 +137,20 @@ mit Git + Github + RStudio}
 \begin{frame}{Work Flow 1}
 \textbf{Erstellen eines Repositories}
 \begin{itemize}
-  \item Erstellen eines Online-Repositorys (z.B. auf Github)
+  \item Erstellen eines \textbf{Online-Repositorys} (z.B. auf Github)
   \begin{itemize}
     \item Benutzen einer R-spezifischen .gitignore
     \item Initialisieren mit einer kurzen Readme-Datei (.md)
   \end{itemize}
-  \item Repository lokal auf den PC clonen
-  \item (optional) R-Projekt in bestehendes Repository einf{\"u}gen
+  \item Repository lokal auf den PC \textbf{clonen} via neues Projekt
+  \item R-Projekt wird automatisch in bestehendes Repository eingef{\"u}gt
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Exkurs: gitignore}
 \begin{itemize}
   \item Einfache Text-Datei
-  \item Welche Dateien sollen nicht archiviert werden? \\
+  \item Welche Dateien sollen nicht getracked werden? \\
   $\rightarrow$ Diese dann nur lokal in ihrer aktuellen Version vorhanden!
   \item Optionen
   \begin{itemize}
@@ -170,7 +170,7 @@ mit Git + Github + RStudio}
 \begin{frame}{Work Flow 2}
 \textbf{Arbeit an einem bestehenden Repositorium}
 \begin{itemize}
-  \item Davor: Lokales Repo synchronisieren (\textbf{pullen})
+  \item Davor: Lokales Repo synchronisieren (\textbf{pullen}) oder \textbf{clonen}
   \item {\"A}nderungen im lokalen Repository \\
   $\rightarrow$ Dateien erstellen/{\"u}berschreiben/l{\"o}schen
   \item {\"A}nderungen \textbf{stagen}
@@ -179,8 +179,35 @@ mit Git + Github + RStudio}
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Exkurs: mergen}
+\textbf{Konflikte innerhalb von Textdateien}
+\begin{itemize}
+  \item Vor allem bei kollaborativem Arbeiten
+  \item Eigene {\"A}nderungen stehen im Konflikt mit anderen {\"A}nderungen
+  $\rightarrow$ Git beschwert sich und zeigt Konflikte auf
+  \item Auswahl der gew{\"u}nschten {\"A}nderungen
+  \item Neu stagen, commiten und pushen
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Exkurs: Branches}
+\textbf{Mehrere parallele Projektversionen innerhalb eines Repos}
+\begin{itemize}
+  \item Vor allem im Bereich Software-Entwicklung
+  \item z.B. ein stabiler \& ein Development-Branch
+  \item Nur bestimmte {\"A}nderungen in stabilen Branch {\"u}bernehmen
+  \item Achtung: RStudio UI st{\"o}{\ss}t hier an seine Grenzen
+\end{itemize}
+\end{frame}
+
 % --------------------------------------------------------------------------------
 \section{Allgemeine Empfehlungen}
+
+\begin{frame}[plain]
+\begin{center}
+\huge Eure Eindr{\"u}cke?
+\end{center}
+\end{frame}
 
 \begin{frame}{Allgemeine Empfehlungen}
 \begin{itemize}
@@ -190,6 +217,7 @@ mit Git + Github + RStudio}
   \end{itemize}
   \item Inhaltlich bedeutungsvolle Commits
   \item Repository schlank halten (keine gro{\ss}en Dateien)
+  \item Vermeidet direktes Arbeiten {\"u}ber die Github Homepage
 \end{itemize}
 \end{frame}
 
