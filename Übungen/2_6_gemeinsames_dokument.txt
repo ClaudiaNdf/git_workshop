@@ -1,6 +1,7 @@
 Lasst uns an diesem Dokument gemeinsam arbeiten!
 
-Claudias brandneue Zeile
+Claudias brandneue Zeile, oder hier?
 
+wieso registriert git das nicht ordentlich
 
-noch mehr changes
+noch mehr changes, vielleicht hier?
