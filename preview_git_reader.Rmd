@@ -118,6 +118,10 @@ Das Tolle ist: Man hat auf seinem eigenen Rechner nur noch eine einzige Syntax l
 
 Um seine Arbeit und gegebenenfalls die von mehreren Kolleg/*innen besser strukturieren zu können, ist es auch möglich, mit mehreren "Branches" zu arbeiten, die an einer Stelle abgezweigt und dann separat voneinander sind und später wieder integriert werden können. Dann pfuscht man sich nicht gegenseitig im Code herum oder man kann Sachen ausprobieren, die man dann später vielleicht doch nicht in den Hauptbranch aufnimmt.
 
+Hier könnt ihr beispielsweise die Historie unseres git-Workshop-Projekts sehen. Auf der linken Seite sieht man die Branches und in der Zeile ist jeder einzelne Commit dargestellt, den wir je vorgenommen haben, mit der Info, wer die Änderung gepusht hat und was die Commitmessage sagt. Geht man auf einen Commit, dann wird einem der Stand eines Files zur dieser Zeit angezeigt inklusive der zeilenweisen Änderungen im Vergleich zur Vorversion.
+
+![branches](Abbildungen_Reader/Branches.png)
+
 ### Kleines git-Vokabular
 
 Begiff       | Erklärung
