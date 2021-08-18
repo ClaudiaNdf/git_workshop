@@ -53,3 +53,4 @@ vignettes/*.pdf
 *.run.xml
 *concordance.tex
 *.tex
+.Rproj.user
