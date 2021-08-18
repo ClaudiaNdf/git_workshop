@@ -16,11 +16,36 @@ Git kann grundsätzlich von der Kommandozeile aus gesteuert werden. Einfacher is
 
 ### Warum sollte ich mit git arbeiten?
 
-Push Faktoren (negative Anreize)
-![Versionskontrolle](Abbildungen_Reader/GitFun_FINALdoc.jpg)
-![Backup von Code](Abbildungen_Reader/GitFun_backup.bmp)
-Pull-Faktoren (positive Anreize)
-![Open Science](Abbildungen_Reader/Open_Science.png)
+Das Arbeiten mit github lohnt sich sowohl bei Forschungsprojekten, in denen ihr die einzigen seid, die an der Syntax arbeiten, als auch bei Projekten, in denen mehrere parallel an Code arbeiten. Dabei gibt es sowohl "Push Faktoren", die Situationen beschreiben, in denen ihr euch niemals (mehr) befinden möchtet. 
+
+<img src="Abbildungen_Reader/GitFun_FINALdoc.jpg" alt="Versionskontrolle"
+	width="300" height="500" />
+
+	
+Wer kennt nicht das Problem, welches man hat, wenn man nach einer Reviewrunde nochmal an die Analysen muss und nicht mehr weiß, welches denn nun eigentlich der aktuellste Stand war? Oder was eigentlich nochmal der Unterschied zwischen der aktuellen und der Version ist, die man gerade ins Archiv verschoben hat? Oder wenn jemand nach längerer Zeit nachfragt, wie man genau bestimmte Analysen gemacht hat?
+
+	
+<img src="Abbildungen_Reader/GitFun_backup.bmp" alt="Backup"
+	width="500" height="200" />
+
+Noch schlimmer, es könnte passieren, dass ihr aus Versehen Files überschreibt oder löscht und sie dann nicht mehr wiederherstellen könnt, falls ihr kein Backup habt. Was, passiert mit eurem aktuellen Projekt, wenn euer Computer explodiert? 
+
+
+Github vermeidet nicht nur diese Szenarien, indem es eine Versionshistorie aller Änderungen an Files abspeichert, die ihr jederzeit, von überall aus einsehen und bearbeiten könnt. Es ermöglicht euch auch, auf viel einfachere Art und Weise mit anderen zu kollaborieren und eure Analysen im Sinne von Open Science transparent und für andere verfügbar zu machen. Somit könnt ihr einen zusätzlichen Mehrwert schaffen, wenn andere auf eurer Arbeit aufbauen können und euren Code z.B. weiterverwenden und zitieren.
+
+Wenn ihr zum Beispiel den "Open Materials"-Badge für euer Paper beanspruchen wollt, dann ist die Veröffentlichung von Code meist notwendig. Natürlich wäre dies auch als Appendix zum Paper möglich aber zum einen hat dann der Verlag die Rechte an eurem Code und zum anderen ist die Auffindbarkeit und Zugänglichkeit auf jeden Fall in einem Repositorium wie github besser. 
+
+<p style="text-align:center;"> 
+<img src="Abbildungen_Reader/Open_Science.png" alt="OpenScience"
+	width="350" height="300" />
+</p>
+
+Für Kollaborationen bietet git noch einen besonderen Mehrwert, da jeder, der auf das Repositorium zugreift immer auf dem aktuellsten Stand ist und man nicht im Nachhinein versuchen muss, Änderungen zu integrieren. Außerdem kann mit der "Commit-Message" (s. unten) prägnant benannt werden, was die Neuerung in der aktuellsten Version ist. Durch die Vergabe unterschiedlicher Rollen kann auch eine hierarchische Struktur abgebildet werden (z.B. der\*die WiMi segnet alle Änderungen ab, die ein\*e StuMi vornimmt).
+
+<p style="text-align:center;"> 
+<img src="Abbildungen_Reader/GitFun_collaboration.jpg" alt="collaboration"
+	width="200" height="300" />
+</p>
 
 ### Welche Vorbereitungen sind notwendig, wenn ich git mit RStudio nutzen möchte?
 1.  Profil auf einem git-Server anlegen
@@ -78,8 +103,20 @@ Erstellt ein neues "Issue", schreibt euren Namen hinein und dass ich euch als Ed
 
 ### Wie sieht der typische Workflow aus?
 
+Wenn man mit git arbeitet, sieht es so aus, dass man sich 
+
+1. das Repositorium auf seinen lokalen Rechner kopiert.
+2. zieht man sich die aktuellste Version mit "PULL", damit man auch in der aktuellsten Version arbeitet und sich nicht nachher mit unnötigen Merge-Konflikten auseinandersetzen muss.
+3. arbeitet man an den Syntaxen wie gewohnt 
+4. Dabei "committet" man Zwischenstände, die man sonst vielleicht als Unterversionen abspeichern würde. Diesen Schritt kann man auch mehrmals während einer Arbeitssession vornehmen. Beispielsweise könnte man immer, wenn ein zusammenhängender Abschnitt fertig ist und funktioniert (Erstellung einer bestimmten Tabelle oder einer bestimmten Analyse) diesen mit einem Kommentar "committen", oder aber bevor man eine größere Änderung (Löschung) in bereits bestehendem Code vornehmen will. 
+4. Schließlich schiebt man die neuen Versionen zum github-Server hoch. Dieser Schritt ist wichtig, da sonst die Änderungen zwar lokal gespeichert, aber nicht im Repositorium, d.h. bei github aktualisiert werden und wenn man dann zum Beispiel von einem anderen Rechner darauf zugreifen will, hat man nicht den aktuellen Stand.
+
+Das Tolle ist: Man hat auf seinem eigenen Rechner nur noch eine einzige Syntax liegen und zwar die aktuellste Version. Wenn man zurück in der Historie will und eine ältere Version nochmal ansehen möchte, so ist das jederzeit möglich (auch wenn man gerade lokal arbeitet), indem man einen alten Committ "auscheckt".
+
 ![Workflow](Abbildungen_Reader/Funktion_von_github.png)
 [Lowndes, 2016](https://jules32.github.io/2016-07-12-Oxford/git/)
+
+Um seine Arbeit und gegebenenfalls die von mehreren Kolleg/*innen besser strukturieren zu können, ist es auch möglich, mit mehreren "Branches" zu arbeiten, die an einer Stelle abgezweigt und dann separat voneinander sind und später wieder integriert werden können. Dann pfuscht man sich nicht gegenseitig im Code herum oder man kann Sachen ausprobieren, die man dann später vielleicht doch nicht in den Hauptbranch aufnimmt.
 
 ### Kleines git-Vokabular
 
@@ -125,7 +162,7 @@ Pull request | Lass andere wissen, dass du Änderungen vorgenommen hast.
 
 3. Pull - zieht euch die aktuellste Version
  
-4. Change I - erstellt ein neues Textfile mit beliebigem Titel und Inhalt (kein Personenbezug!)
+4. Change I - erstellt ein neues Textfile mit beliebigem Titel und Inhalt im Übungsordner (kein Personenbezug!)
 
 5. Stage/Commit/Push - ladet eure Änderungen in unser gemeinsames Repositorium hoch
 
